@@ -1,7 +1,7 @@
-import { LoginPage } from "./pages/LoginPage.jsx";
+import { AppRouter } from "./router/AppRouter.jsx";
 
-// App es el componente raíz: elige qué página mostramos en la aplicación.
-// Por ahora muestra LoginPage; después AppRouter elegirá según la URL.
+// App es el componente raíz y delega la selección de páginas al router.
+// main.jsx monta este árbol dentro del contenedor root de nuestro HTML.
 export const App = () => {
-  return <LoginPage />;
+  return <AppRouter />;
 };
