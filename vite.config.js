@@ -6,4 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 // Registramos ambos plugins para que Vite los use al desarrollar y al compilar.
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  // El TP1 permite este puerto por CORS; no cambiamos a otro silenciosamente.
+  server: { port: 5173, strictPort: true },
 });
