@@ -54,21 +54,21 @@ export const Navbar = () => {
   };
 
   return (
-    <nav aria-label="Navegación principal" className="border-b">
+    <nav aria-label="Navegación principal" className="bg-green-700 text-white">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-4 p-4">
-        <Link to="/home" className="text-blue-700 underline">Inicio</Link>
+        <Link to="/home" className="underline">Inicio</Link>
 
         {/* El botón informa la carga y evita enviar varios logout simultáneos. */}
         <button
           type="button"
           onClick={handleLogout}
           disabled={isLoading}
-          className="border p-2 disabled:opacity-50"
+          className="bg-red-700 p-2 text-white hover:bg-red-800 disabled:opacity-50"
         >
           {isLoading ? "Cerrando sesión..." : "Cerrar sesión"}
         </button>
       </div>
-      {error && <p role="alert" className="mx-auto max-w-3xl px-4 pb-4 text-red-700">{error}</p>}
+      {error && <p role="alert" className="mx-auto max-w-3xl px-4 pb-4">{error}</p>}
     </nav>
   );
 };

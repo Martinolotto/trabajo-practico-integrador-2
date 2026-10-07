@@ -143,7 +143,7 @@ export const LoginPage = () => {
         <button
           type="submit"
           disabled={isLoading}
-          className="bg-blue-600 p-2 text-white disabled:opacity-50"
+          className="bg-green-600 p-2 text-white disabled:opacity-50"
         >
           Iniciar sesión
         </button>

@@ -8,7 +8,7 @@ export const ArticleCard = ({ article }) => {
       <p className="mb-2 break-words">{article.excerpt}</p>
 
       {/* author es otro objeto del artículo; username contiene el nombre del autor. */}
-      <p className="text-sm text-gray-600">Autor: {article.author.username}</p>
+      <p className="text-blue-700">Autor: {article.author.username}</p>
     </article>
   );
 };
